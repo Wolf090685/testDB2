@@ -1,0 +1,62 @@
+@media (max-width: 1199px) {
+    .statistic {
+        margin-bottom: 20px;
+        height: auto !important;
+    }
+    .myChart--pie {
+        margin-top: 20px;
+    }
+    .form {
+        flex-direction: column;
+    }
+    .filter-group + .filter-group {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .filter-group {
+        width: 100%;
+    }
+    .filters__select {
+        display: block;
+    }
+    .label-select {
+        width: auto;
+        margin-bottom: 5px;
+    }
+    input[type=date] {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .btn--toggle-aside {
+        display: block;
+    }
+    .aside-panel {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .table-1 {
+        margin-bottom: 20px;
+    }
+    .btn--toggle-aside {
+        font-size: 14px;
+    }
+    .help-btn {
+        display: none;       
+    }
+}
+
+@media (max-width: 575px) {
+    .brend {
+        margin-bottom: 20px;
+    }
+    .title-programm {
+        font-size: 22px;
+    }
+    .info-banner {
+        display: none;
+    }
+}

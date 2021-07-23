@@ -1,0 +1,35 @@
+.myChart {
+  position: relative;
+  border: 3px solid rgb(148, 18, 18);
+  border-radius: 6px;
+  padding: 50px 5px 5px 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: linear-gradient(90deg, rgba(230,238,240,1) 10%, rgba(233,233,237,1) 40%, rgba(228,227,236,1) 98%); 
+  p {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+}
+.myChart--bar {
+  padding: 5px;
+}
+.myChart-legend {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.myChart-legend--pie {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  select {
+    max-width: 150px;
+  }
+}
+.period-sales {
+  font-size: 12px;
+}

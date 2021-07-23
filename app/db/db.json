@@ -1,0 +1,26 @@
+[
+    {
+      "country": "Spain",
+      "value": 320
+    },
+    {
+        "country": "Germany",
+        "value": 250
+    },
+    {
+        "country": "Russia",
+        "value": 530
+    },
+    {
+        "country": "France",
+        "value": 330
+    },
+    {
+        "country": "USA",
+        "value": 130
+    },
+    {
+        "country": "Chinа",
+        "value": 115
+    }
+]

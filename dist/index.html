@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="container-fluid">
+            <div class="wrapper">
+                <!-- Header -->
+                <header class="header mb-3">
+                    <div class="container-fluid">
+                        <div class="row align-items-end">
+                            <div class="col-md-2">
+                                <div class="brend">
+                                    brend-info
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="header__inner">
+                                    <h1 class="title-programm">Agent programm</h1>
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                            <button class="nav-link active" id="nav-dashboard-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-dashboard" type="button" role="tab"
+                                                aria-controls="nav-dashboard" aria-selected="true">Dashboard</button>
+                                            <button class="nav-link" id="nav-terms-tab" data-bs-toggle="tab"
+                                                data-bs-target="#nav-terms" type="button" role="tab"
+                                                aria-controls="nav-terms" aria-selected="false">Terms & Conditions</button>
+                                        </div>
+                                    </nav>
+                                    <button class="help-btn">
+                                        <img src="images/help-web-button.svg" alt="help icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+    
+                <main>
+                    <div class="container-fluid">
+                        <!-- Вся страница как один ряд и колонка (для переключения табов) -->
+                        <div class="row">
+                            <div class="col">
+    
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-dashboard" role="tabpanel"
+                                        aria-labelledby="nav-dashboard-tab">
+    
+                                        <!-- Вся страница - один ряд, но деление на aside и главную часть -->
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <button class="btn btn-primary btn--toggle-aside" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Показать панель</button>
+                                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+                                                    <div class="offcanvas-header">
+                                                      <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Боковая панель</h5>
+                                                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                                                    </div>
+                                                    <div class="offcanvas-body">
+                                                      <ul>
+                                                          <li>
+                                                              <a href="#">Пункт боковой панели 1</a>
+                                                          </li>
+                                                          <li>
+                                                              <a href="#">Пункт боковой панели 2</a>
+                                                          </li>
+                                                          <li>
+                                                              <a href="#">Пункт боковой панели 3</a>
+                                                          </li>
+                                                          <li>
+                                                              <a href="#">Пункт боковой панели 4</a>
+                                                          </li>
+                                                          <li>
+                                                              <a href="#">Пункт боковой панели 5</a>
+                                                          </li>
+                                                          <li>
+                                                              <a href="#">Пункт боковой панели 6</a>
+                                                          </li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                <aside class="aside-panel">
+                                                    боковая панель
+                                                </aside>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <!-- Внутри центр. части страницы размечаем необходимые ряды с соотв. кол-вом блоков -->
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="info-banner mb-3">
+                                                            info-banner
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="row mb-3">
+                                                    <div class="col-xl-2">
+                                                        <div class="statistic h-100">
+                                                            statistic
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-5">
+                                                        <div class="myChart h-100">
+                                                            <div class="myChart-legend">
+                                                                <p>ticket sales</p>
+                                                                <div class="period-sales">
+                                                                    <span class="period-sales-from">11/02/14</span>
+                                                                    -
+                                                                    <span class="period-sales-to">11/04/14</span>
+                                                                </div>
+                                                            </div>
+                                                            <canvas id="myChart">     
+                                                            </canvas>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-5">
+                                                        <div class="myChart myChart--pie">
+                                                            <div class="myChart-legend myChart-legend--pie">
+                                                                <p>ticket sales</p>
+                                                                <select class="form-select">
+                                                                    <option selected>All Types</option>
+                                                                    <option value="Asia">Domestic</option>
+                                                                    <option value="Europe">Long Haul</option>
+                                                                    <option value="Africa">Regional</option>
+                                                                </select>
+                                                            </div>
+                                                            <canvas id="myChart1"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="row mb-3">
+                                                    <div class="col">
+                                                        <div class="filters">
+
+                                                            <form class="form">
+
+                                                                <div class="filter-group">
+                                                                    <div class="filters__select">
+                                                                        <label class="label-select" for="filterBy">Filter By:</label>
+                                                                        <select class="form-select" id="filterBy">
+                                                                            <option selected>All Regions</option>
+                                                                            <option value="Asia">Asia</option>
+                                                                            <option value="Europe">Europe</option>
+                                                                            <option value="Africa">Africa</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="filter-group">
+                                                                    <select class="form-select">
+                                                                        <option selected>All Regions</option>
+                                                                        <option value="Asia">Domestic</option>
+                                                                        <option value="Europe">Long Haul</option>
+                                                                        <option value="Africa">Regional</option>
+                                                                    </select>
+                                                                </div>                                                                
+                                                                <div class="filter-group">
+                                                                    <div class="dateFrom">
+                                                                        <label for="dateFrom">From:</label>
+                                                                        <input type="date" name="dateFrom" id="dateFrom">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="filter-group">
+                                                                    <div class="dateTo">
+                                                                        <label for="dateTo">to:</label>
+                                                                        <input type="date" name="dateTo" id="dateTo">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="filter-group">
+                                                                    <button type="submit" class="btn btn-danger">Refresh Results</button>
+                                                                </div>                                                                      
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="table-1">
+                                                            table-1
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="table-2">
+                                                            table-2
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <button type="button" class="btn btn-addChart btn-success">Добавить/обновить график</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-xl-5">
+                                                        <div class="addChart">
+                                                            <!--место для нового графика  -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- центральная колонка -->
+                                        </div>
+                                        <!-- центральный row -->
+    
+                                    </div>
+                                    <!-- tab-1 -->
+                                    <div class="tab-pane fade" id="nav-terms" role="tabpanel"
+                                        aria-labelledby="nav-terms-tab">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Tempore dolorum obcaecati nihil, accusamus esse quo recusandae sapiente nemo
+                                        aliquam autem fuga voluptates voluptatibus id vel excepturi repellendus, deleniti ex
+                                        tempora.
+                                        Sit modi assumenda numquam. Commodi in, perspiciatis cumque expedita aspernatur
+                                        molestiae excepturi minus! Sed reiciendis est quae fugit possimus eum, dolorem
+                                        corporis sunt natus aliquid ratione, nemo optio. Illo, iusto.
+                                        Inventore iusto tenetur alias voluptatum nobis libero veritatis provident culpa
+                                        quis, perferendis id quaerat quo, adipisci aperiam iste nesciunt quibusdam.
+                                        Accusamus quis voluptatem voluptate, a labore dolorem blanditiis qui optio.
+                                        Aperiam quidem quas explicabo temporibus? Sed, iste autem consectetur recusandae
+                                        quibusdam accusamus minus. Porro, possimus a nihil blanditiis, pariatur ipsum
+                                        voluptatum ipsa eum eveniet repudiandae itaque! Voluptatibus error iure dolore.
+                                        Dolor molestias nulla sit unde cupiditate quaerat voluptatem voluptatibus,
+                                        repellendus velit enim minus praesentium soluta, rerum neque vel deserunt sapiente
+                                        exercitationem quidem corporis esse maxime. Autem molestias ea magnam sunt!
+                                        At expedita aspernatur voluptatem laudantium aut doloremque, aliquid totam pariatur
+                                        magni adipisci minus assumenda quo quos, ducimus reiciendis laboriosam. Consequuntur
+                                        id ipsam aliquid sed illum, maxime ex voluptatem amet voluptas.
+                                        Vero, architecto? Facilis, nisi ex, similique earum commodi enim expedita unde
+                                        corporis quos quae aliquid, quis autem magni quam omnis vero. Explicabo pariatur
+                                        saepe obcaecati veniam enim inventore, eos ab.
+                                        Possimus voluptatibus non, accusantium totam, reiciendis fugit atque quam minus quos
+                                        suscipit accusamus eaque, obcaecati porro odio. Doloribus laudantium tempora
+                                        voluptate officiis non. Est nemo omnis iste sed voluptas sapiente?
+                                        Repellendus enim delectus non suscipit architecto omnis voluptatem dolor, et,
+                                        numquam magni ab! Soluta sapiente placeat mollitia corrupti quae nulla esse alias
+                                        vel recusandae quibusdam? Ipsa tempore architecto delectus quis?
+                                        Vel inventore voluptatum esse iusto ipsum minus, repudiandae deleniti sint
+                                        praesentium magni veniam et distinctio nesciunt accusamus quia, consequuntur ut eius
+                                        voluptatem eaque labore facilis? Commodi beatae eos nihil ducimus.
+                                    </div>
+                                    <!-- tab-2 -->
+                                </div>
+                                <!-- all tab-content -->
+                            </div>
+                            <!-- col page-->
+                        </div>
+                        <!-- row page -->
+                    </div>
+                    <!-- container -->
+                </main>
+            </div>
+            <!-- wrapper -->
+        </div>
+        <!-- container -->
+    </div>
+
+    <script src="js/main.min.js"></script>
+
+</body>
+</html>
